@@ -25,10 +25,10 @@
  color: black
 }
 
-.Button.Red{
+.Button.Blue{
   background-color: blue;
 }
 
-.Button.Red:hover{
+.Button.Blue:hover{
   background-color: lightblue;
 }
