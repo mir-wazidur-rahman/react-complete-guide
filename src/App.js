@@ -53,7 +53,7 @@ class App extends Component {
   render() {
     
     let persons = null;
-    let btnClass = [cssclass.Button];
+    let btnClass = '';
 
     if (this.state.showPersons){
       persons = (    <div>
@@ -69,7 +69,7 @@ class App extends Component {
           
       </div> 
      );
-     btnClass.push(cssclass.Blue)       
+     btnClass = cssclass.Blue;       
     }
 
     //rendring css dynamically
@@ -88,7 +88,7 @@ class App extends Component {
       <div className={cssclass.App}>
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(' ')}>This is really working!</p>
-        <button className={btnClass.join(' ')} alt={this.state.showPersons} onClick={this.togglePersonHandler}>Toggle Person</button>
+        <button className={btnClass} alt={this.state.showPersons} onClick={this.togglePersonHandler}>Toggle Person</button>
         {persons}
       </div>
     );

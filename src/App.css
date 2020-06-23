@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.Button{
+.App button{
   background-color: black; 
    color: white;
    font: inherit;
@@ -20,15 +20,15 @@
 }
 
   
-.Button:hover {
+.App button:hover {
  background-color: grey;
  color: black
 }
 
-.Button.Blue{
+.App button.Blue{
   background-color: blue;
 }
 
-.Button.Blue:hover{
+.App button.Blue:hover{
   background-color: lightblue;
 }
