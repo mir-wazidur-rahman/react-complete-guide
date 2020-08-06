@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-// import cssclass from './Person.css';
+import cssclass from './Person.css';
 // import styled from 'styled-components';
 import Auxilliary from '../../../hoc/Auxilliary';
+import withClass from '../../../hoc/withClass';
 
 class Person extends Component{
 
@@ -18,4 +19,4 @@ class Person extends Component{
     };
 }
 
-export default Person;
+export default withClass(Person,cssclass.Person);
