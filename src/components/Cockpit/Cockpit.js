@@ -12,7 +12,7 @@ const cockpit = ( props ) => {
       // setTimeout(() => {
       //   alert('Saved data to cloud!');
       // },1000);
-      toggleBtnRef.current.clicked;
+      toggleBtnRef.current.click();
       return () => {
         console.log('[Cockpit.js] cleanup in useEffect');
       }
@@ -45,6 +45,7 @@ const cockpit = ( props ) => {
         <h1>{props.title}</h1>
         <p className={classes.join(' ')}>This is really working!</p>
         <button ref={toggleBtnRef} className={btnClass} alt={props.showPersons} onClick={props.clicked}>Toggle Person</button>
+        <button onClick={props.login}>Log In</button>
     </div>
     );
 };
